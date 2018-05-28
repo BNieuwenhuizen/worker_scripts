@@ -25,4 +25,4 @@ cd $START_PWD
 
 
 tar cJf artifacts.tar.xz artifacts
-scp artifacts.tar.xz stashed-file-writer@ci.basnieuwenhuizen.nl:/srv/stashed-files/vulkan-${BUILD_NAME?}.tar.xz
+scp -o StrictHostKeyChecking=no artifacts.tar.xz stashed-file-writer@ci.basnieuwenhuizen.nl:/srv/stashed-files/vulkan-${BUILD_NAME?}.tar.xz
