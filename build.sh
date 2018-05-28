@@ -41,7 +41,7 @@ mkdir mesa-build
 cd mesa-build
 
 export PATH="$START_PWD/artifacts/bin:$PATH"
-export PKG_CONFIG_PATH="$START_PWD/artifacts/lib/pkgconfig"
+export PKG_CONFIG_PATH="$START_PWD/artifacts/lib64/pkgconfig"
 meson --buildtype release --prefix "$START_PWD/artifacts"  -Dplatforms=drm -Ddri-drivers= -Dvulkan-drivers=amd -Dgallium-drivers= ../mesa
 ninja
 ninja install
@@ -49,7 +49,6 @@ ninja install
 cd $START_PWD
 
 rm artifacts/lib/*.a
-rm -R artifacts/lib/pkgconfig
 rm -R artifacts/include
 
 
