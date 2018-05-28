@@ -53,4 +53,4 @@ rm -R artifacts/include
 
 
 tar cJf artifacts.tar.xz artifacts
-scp artifacts.tar.xz stashed-file-writer@ci.basnieuwenhuizen.nl:/srv/stashed-files/mesa-${BUILD_NAME?}.tar.xz
+scp -o StrictHostKeyChecking=no artifacts.tar.xz stashed-file-writer@ci.basnieuwenhuizen.nl:/srv/stashed-files/mesa-${BUILD_NAME?}.tar.xz
