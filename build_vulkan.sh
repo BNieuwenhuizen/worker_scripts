@@ -18,7 +18,7 @@ cd $START_PWD
 mkdir artifacts/vulkan-cts
 cd artifacts/vulkan-cts
 
-cmake -GNinja -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH="$START_PWD/artifacts" ../../VK-GL-CTS
+cmake -GNinja -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH="$START_PWD/artifacts" -DDEQP_TARGET:STRING=null  ../../VK-GL-CTS
 ninja
 
 cd $START_PWD
