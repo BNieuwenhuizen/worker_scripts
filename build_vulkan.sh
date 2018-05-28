@@ -25,6 +25,9 @@ cd $START_PWD
 
 cp VK-GL-CTS/external/vulkancts/mustpass/1.1.2/vk-default.txt artifacts/mustpass.txt
 
+make -C cts_runner
+mkdir artifacts/bin
+cp cts_runner/vulkan-cts-runner artifacts/bin/
 
 tar cJf artifacts.tar.xz artifacts
 scp -o StrictHostKeyChecking=no artifacts.tar.xz stashed-file-writer@ci.basnieuwenhuizen.nl:/srv/stashed-files/vulkan-${BUILD_NAME?}.tar.xz
