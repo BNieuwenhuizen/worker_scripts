@@ -11,9 +11,9 @@ tar xvf mesa.tar.xz
 
 
 
-sed -i "s#\".*artifacts#$PWD\/artifacts#g"  $PWD/artifacts/share/vulkan/icd.d/radeon_icd.x86_64.json
+sed -i "s#\".*artifacts#\"$PWD\/artifacts#g"  $PWD/artifacts/share/vulkan/icd.d/radeon_icd.x86_64.json
 export VK_ICD_FILENAMES=$PWD/artifacts/share/vulkan/icd.d/radeon_icd.x86_64.json
-export LD_LIBRARY_PATH=$PWD/artifacts/LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$PWD/artifacts/lib
 
 artifacts/bin/vulkan-cts-runner --deqp "$PWD/artifacts/vulkan-cts/external/vulkancts/modules/vulkan/deqp-vk" --caselist  "$PWD/artifacts/mustpass.txt" --output results.csv
 
