@@ -1,7 +1,7 @@
-BUILDERNAME=tonga
-MESA_ID=t
+BUILDERNAME=$1
+MESA_ID=$2
 
-FAMILY=$BUILDERNAME
+FAMILY={$BUILDERNAME#test-}
 
 [ -d artifacts ] && rm -R artifacts
 
