@@ -11,8 +11,8 @@ scp -o StrictHostKeyChecking=no stashed-file-writer@ci.basnieuwenhuizen.nl:/srv/
 scp -o StrictHostKeyChecking=no stashed-file-writer@ci.basnieuwenhuizen.nl:/srv/stashed-files/mesa-${MESA_ID}.tar.xz mesa.tar.xz
 
 
-tar xvf vulkan.tar.xz
-tar xvf mesa.tar.xz
+tar xf vulkan.tar.xz
+tar xf mesa.tar.xz
 
 sed -i "s#\"library_path\": \".*artifacts#\"library_path\": \"$PWD\/artifacts#g"  $PWD/artifacts/share/vulkan/icd.d/radeon_icd.x86_64.json
 export VK_ICD_FILENAMES=$PWD/artifacts/share/vulkan/icd.d/radeon_icd.x86_64.json
