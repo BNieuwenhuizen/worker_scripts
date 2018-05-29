@@ -1,6 +1,8 @@
 START_PWD=`pwd`
 BUILD_NAME=$1
 
+echo "Build name " ${BUILD_NAME?}
+
 set -e
 
 [ -d artifacts ] && rm -Rf artifacts
