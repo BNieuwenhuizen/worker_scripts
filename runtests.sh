@@ -1,7 +1,7 @@
 BUILDERNAME=$1
 MESA_ID=$2
 
-FAMILY={$BUILDERNAME#test-}
+FAMILY=${BUILDERNAME#test-}
 
 [ -d artifacts ] && rm -R artifacts
 
