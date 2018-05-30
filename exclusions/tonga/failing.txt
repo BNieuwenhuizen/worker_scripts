@@ -10,6 +10,7 @@ dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.dont_ca
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.dont_care.store.clear_draw
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.dont_care.store.self_dep_draw_use_input_aspect_stencil_read_only
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.load.dont_care.draw_use_input_aspect
+dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.load.store.clear
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.load.store.clear_draw_use_input_aspect
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.load.store.clear_use_input_aspect
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.load.store.self_dep_clear_draw_use_input_aspect_depth_read_only
