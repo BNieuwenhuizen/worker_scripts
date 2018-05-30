@@ -25,3 +25,7 @@ dEQP-VK.subgroups.vote.subgroupallequal_uvec4_graphic
 dEQP-VK.subgroups.vote.subgroupallequal_vec2_graphic
 dEQP-VK.subgroups.vote.subgroupallequal_vec3_graphic
 dEQP-VK.subgroups.vote.subgroupallequal_vec4_graphic
+dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.clear.store.clear_stencil_read_only
+dEQP-VK.renderpass.suballocation.formats.d32_sfloat_s8_uint.input.load.store.draw_use_input_aspect
+dEQP-VK.renderpass.suballocation.formats.d32_sfloat_s8_uint.input.load.store.self_dep_clear_use_input_aspect_stencil_read_only
+dEQP-VK.spirv_assembly.type.vec4.i32.constant_composite_frag
