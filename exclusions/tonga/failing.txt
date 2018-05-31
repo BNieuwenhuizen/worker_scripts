@@ -1,10 +1,13 @@
 dEQP-VK.api.copy_and_blit.dedicated_allocation.image_to_image.all_formats.depth_stencil.d32_sfloat_s8_uint_d32_sfloat_s8_uint.general_optimal
+dEQP-VK.pipeline.render_to_image.core.1d_array.huge.width_layers.r8g8b8a8_unorm_d32_sfloat_s8_uint
 dEQP-VK.pipeline.render_to_image.core.2d_array.huge.width_layers.r8g8b8a8_unorm_d32_sfloat_s8_uint
 dEQP-VK.pipeline.render_to_image.core.cube_array.huge.layers.r8g8b8a8_unorm_d32_sfloat_s8_uint
 dEQP-VK.pipeline.render_to_image.dedicated_allocation.3d.small.r32g32b32a32_sfloat_d32_sfloat_s8_uint
 dEQP-VK.pipeline.render_to_image.dedicated_allocation.3d.small.r32_uint_d32_sfloat_s8_uint
+dEQP-VK.pipeline.render_to_image.dedicated_allocation.3d.small.r8g8b8a8_unorm_d32_sfloat_s8_uint
 dEQP-VK.pipeline.render_to_image.dedicated_allocation.cube.small.r16g16_sint_d32_sfloat_s8_uint
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.clear.dont_care.clear_draw
+dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.clear.dont_care.draw
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.clear.dont_care.draw_use_input_aspect_stencil_read_only
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.clear.store.clear_draw_use_input_aspect_depth_read_only
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.clear.store.clear_stencil_read_only
@@ -23,6 +26,7 @@ dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.load.st
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.load.store.self_dep_clear_use_input_aspect_depth_read_only
 dEQP-VK.renderpass.dedicated_allocation.formats.d32_sfloat_s8_uint.input.load.store.self_dep_draw_stencil_read_only
 dEQP-VK.renderpass.suballocation.formats.d32_sfloat_s8_uint.input.clear.store.clear_depth_read_only
+dEQP-VK.renderpass.suballocation.formats.d32_sfloat_s8_uint.input.clear.store.clear_draw_stencil_read_only
 dEQP-VK.renderpass.suballocation.formats.d32_sfloat_s8_uint.input.clear.store.clear_draw_use_input_aspect_depth_read_only
 dEQP-VK.renderpass.suballocation.formats.d32_sfloat_s8_uint.input.clear.store.clear_draw_use_input_aspect_stencil_read_only
 dEQP-VK.renderpass.suballocation.formats.d32_sfloat_s8_uint.input.clear.store.clear_stencil_read_only
