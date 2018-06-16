@@ -25,7 +25,13 @@ cp artifacts/mustpass.txt mustpass.txt
 artifacts/bin/vulkan-cts-runner --deqp "$PWD/artifacts/vulkan-cts/external/vulkancts/modules/vulkan/deqp-vk" --caselist  "$PWD/mustpass.txt" --output results.csv
 
 cp results.csv results_filtered.csv
+echo None > ignored.txt
+
 [ -f worker_scripts/exclusions/${FAMILY?}/failing.txt ] && (grep -vFf worker_scripts/exclusions/${FAMILY?}/failing.txt results.csv > results_filtered.csv) || true
+[ -f worker_scripts/exclusions/${FAMILY?}/failing.txt ] && (grep -Ff worker_scripts/exclusions/${FAMILY?}/failing.txt results.csv > ignored.csv) || true
+
+echo "Ignored tests:"
+cat ignored.csv
 
 echo "Failures:"
 ! grep Fail\\\|Crash results_filtered.csv 
