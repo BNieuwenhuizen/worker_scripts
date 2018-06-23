@@ -1,4 +1,5 @@
 dEQP-VK.pipeline.render_to_image.core.1d_array.huge.width_layers.r8g8b8a8_unorm_d32_sfloat_s8_uint
+dEQP-VK.pipeline.render_to_image.core.3d.huge.height_depth.r8g8b8a8_unorm_d32_sfloat_s8_uint
 dEQP-VK.pipeline.render_to_image.dedicated_allocation.3d.small.r32_uint_d32_sfloat_s8_uint
 dEQP-VK.sparse_resources.image_sparse_binding.1d_array.rgba16ui.512_1_64
 dEQP-VK.spirv_assembly.type.vec4.i32.constant_composite_frag
